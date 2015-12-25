@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dogHuman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="犬の年齢を入れると人間での年齢を計算します。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEF-RS-iSB">
+                                <rect key="frame" x="83" y="65" width="206" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="Zvf-9T-e0w"/>
+                                    <constraint firstAttribute="height" constant="52" id="wV2-TM-Zfm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDU-lr-8lp">
+                                <rect key="frame" x="133" y="163" width="94" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jap-M6-gy3"/>
+                                    <constraint firstAttribute="width" constant="94" id="yrt-cE-hKE"/>
+                                </constraints>
+                                <state key="normal" title="計算開始"/>
+                                <connections>
+                                    <action selector="tapBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xdl-WW-COG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="人間としての年齢" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMa-BI-R1c">
+                                <rect key="frame" x="65" y="223" width="224" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="Ht7-3Q-lZl"/>
+                                    <constraint firstAttribute="height" constant="21" id="OvH-lp-R9O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZC6-hZ-a8x">
+                                <rect key="frame" x="130" y="125" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Kj9-uc-A3v"/>
+                                    <constraint firstAttribute="width" constant="97" id="V5l-cK-G1P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="犬の年齢" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7T-3O-nlo">
+                                <rect key="frame" x="144" y="28" width="68" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="K2C-WR-WBu"/>
+                                    <constraint firstAttribute="height" constant="21" id="opK-hH-xz3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="dog.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="f89-jC-Ayk">
+                                <rect key="frame" x="57" y="264" width="259" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="QyC-gl-zgn"/>
+                                    <constraint firstAttribute="height" constant="194" id="lsO-R6-wen"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yMa-BI-R1c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Cn-Eb-BQH"/>
+                            <constraint firstItem="EDU-lr-8lp" firstAttribute="top" secondItem="ZC6-hZ-a8x" secondAttribute="bottom" constant="8" id="CyE-NZ-Gp7"/>
+                            <constraint firstItem="ZC6-hZ-a8x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ILo-pQ-4KC"/>
+                            <constraint firstItem="ZC6-hZ-a8x" firstAttribute="top" secondItem="vEF-RS-iSB" secondAttribute="bottom" constant="8" id="JX5-7m-fuU"/>
+                            <constraint firstItem="f89-jC-Ayk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JkA-22-hoN"/>
+                            <constraint firstItem="vEF-RS-iSB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZHY-Yl-FPF"/>
+                            <constraint firstItem="E7T-3O-nlo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e2e-Iv-c5Y"/>
+                            <constraint firstItem="vEF-RS-iSB" firstAttribute="top" secondItem="E7T-3O-nlo" secondAttribute="bottom" constant="16" id="fI6-Zq-dZ1"/>
+                            <constraint firstItem="EDU-lr-8lp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kJ3-on-dFL"/>
+                            <constraint firstItem="yMa-BI-R1c" firstAttribute="top" secondItem="EDU-lr-8lp" secondAttribute="bottom" constant="30" id="mij-lF-gb5"/>
+                            <constraint firstItem="E7T-3O-nlo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="r16-62-3v7"/>
+                            <constraint firstItem="f89-jC-Ayk" firstAttribute="top" secondItem="yMa-BI-R1c" secondAttribute="bottom" constant="30" id="tym-tx-rtk"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="dogAge" destination="ZC6-hZ-a8x" id="de6-Ok-Z8M"/>
+                        <outlet property="humanAge" destination="yMa-BI-R1c" id="YiU-ff-Ype"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6XN-mk-zGo">
+                    <connections>
+                        <action selector="tapScreen:" destination="BYZ-38-t0r" id="MuL-4i-PYt"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="300.5" y="388.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dog.jpeg" width="259" height="194"/>
+    </resources>
+</document>
